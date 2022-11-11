@@ -8,8 +8,8 @@
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.Stride.OpenXRExtensions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary></summary>
-    <description></description>
+    <summary>OpenXR Extensions for VL</summary>
+    <description>OpenXR Extensions for VL</description>
     <tags>VL, stride, openxr, handtracking</tags>
     <license type="expression">LGPL-3.0-only</license>
     <icon>icon\nugeticon.png</icon>
