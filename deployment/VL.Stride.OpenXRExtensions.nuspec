@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.Stride.OpenXRExtensions</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.Stride.OpenXRExtensions</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.Stride.OpenXRExtensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary></summary>
+    <description></description>
+    <tags>VL, stride, openxr, handtracking</tags>
+    <license type="expression">LGPL-3.0-only</license>
+    <icon>icon\nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+	<file src="..\lib\**\*.dll" target="lib\" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+    <file src="nugeticon.png" target="icon\" />
+  </files>
+</package>

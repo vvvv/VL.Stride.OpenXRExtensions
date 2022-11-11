@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="D34QbqmNrM1MPS0v5V2oTx" LanguageVersion="2022.5.0-0330-ed568d1299" Version="0.128">
+  <NugetDependency Id="LL3YHijzGU8LYXB9XxnAgx" Location="VL.CoreLib" Version="2022.5.0-0330-ed568d1299" />
+  <Patch Id="VzF5hWfjsDNPogiWmBMnrp">
+    <Canvas Id="H1hv5waThxkO8vg5JgiSqt" DefaultCategory="Stride.VirtualReality" CanvasType="FullCategory">
+      <!--
+
+    ************************ HandTrackingEXT ************************
+
+-->
+      <Node Name="HandTrackingEXT" Bounds="401,355" Id="CRaowQ3WfUzQRjtQkpgrK1">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="NJ4jMDs0lB6MFbM47Sqf3f">
+          <Canvas Id="AT3oP8cGsPlMVA1BFoCorf" CanvasType="Group">
+            <Pad Id="OIjE6d1nvS5NgpY43cZ00r" SlotId="R30OktVCXaCOvo3cPT1n2G" Bounds="430,510" />
+            <ControlPoint Id="RlOVByBkzY0OQKbCmCZdya" Bounds="847,1568" />
+            <Node Bounds="429,453,48,19" Id="Den1ygnRNJBLm9rsWjYwSo">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CastAs" />
+              </p:NodeReference>
+              <Pin Id="CK4QYZJuSEHM885RMXv2x7" Name="Input" Kind="StateInputPin" />
+              <Pin Id="U1fPtZEwsVjOg6vic4xk2l" Name="Default" Kind="InputPin" />
+              <Pin Id="NfyhatvWBTPOt04xbdB2kL" Name="Result" Kind="OutputPin" />
+              <Pin Id="ONHusxkIGFdLhuwUy0UOiE" Name="Success" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="497,533,166,300" Id="Ui1Ee5RWe6KOdyimiKgfmP">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="N5azhQqBJLeOD5Bz3meX23" Name="Force" Kind="InputPin" />
+              <Pin Id="Sa4bj75znwwLUfuDCNWW3P" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
+              <Pin Id="Ckxk7FrYxzUMBOAxmOfkUn" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="EaZK1YQp0OXM8RAjpCYqya" ManuallySortedPins="true">
+                <Node Bounds="566,742,66,19" Id="GyWVZItxvziMV0pekomoDP">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="P1GoWqjT5jLPUXGN11gPdM" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="509,556,78,19" Id="N2vtbKIWSI5Osev2bivIQO">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="OpenXRHmd" />
+                    <Choice Kind="OperationCallFlag" Name="globalSession" />
+                  </p:NodeReference>
+                  <Pin Id="JygbUi54FREObho0BdjAPE" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OCPRR3ibfbXMGZt9eJkPYj" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="IE1Dl9JzD6VPHVT4e6meRR" Name="Global Session" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="509,599,62,19" Id="BojraGufU9FQdXawnJhSIM">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="system_id" />
+                  </p:NodeReference>
+                  <Pin Id="VoAFZUyWiEaOzSDZ1Rt0A3" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="H2UlubPfYaGObVuYy4TBum" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="SWNtHzGfknCOxwdBbZ93HF" Name="System_id" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="509,640,62,19" Id="Q3mpYG7UPqUNOUphSTDOGB">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Xr" />
+                  </p:NodeReference>
+                  <Pin Id="CJVc5KX0Cm4MldSHmHL59X" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Pq6AolYt5DqQTahJXJCeVq" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="B6BaT1TeV4KM8ZqPXo84kN" Name="Xr" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="566,786,85,19" Id="Gv0yb5p311oP4l6Y2U4aid">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
+                    <Choice Kind="OperationCallFlag" Name="Initialize" />
+                  </p:NodeReference>
+                  <Pin Id="JKjPHc9qG5dNKtLLZft8UE" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BcvWOeRojhxN3Cr666bmcs" Name="Xr" Kind="InputPin" />
+                  <Pin Id="UfVCBfu7HX0M4rkjT8rdLJ" Name="Session" Kind="InputPin" />
+                  <Pin Id="Ey6uihUQJ1nP7kCF6ccdis" Name="Instance" Kind="InputPin" />
+                  <Pin Id="J6DyuEQyzMpNLuU8CaJ0sF" Name="System_id" Kind="InputPin" />
+                  <Pin Id="I2k7NILV7ndMyfQQER5pLG" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="509,681,62,19" Id="En22tuwe8b8MhRFSsbk0Jr">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Instance" />
+                    <CategoryReference Kind="AssemblyCategory" Name="OpenXRHmd" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="CLLEo3cu2lIMPbID2raHPz" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="ObeRsJt381ILmIdAS5T43V" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="BjUIlqKr22QPRFh1aHRznS" Name="Instance" Kind="OutputPin" />
+                </Node>
+                <Patch Id="MMnneZtJOPJLGH2H15CV2c" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="MFhhKQkQVhvOV5Nj98ufMM" Name="Then" ManuallySortedPins="true" />
+              </Patch>
+              <ControlPoint Id="FTig0ewPNBTM0IkXL62bQe" Bounds="568,827" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="495,493,56,19" Id="E31wuatZii2N5rhO5wVI3X">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+              </p:NodeReference>
+              <Pin Id="T7VPH0C3B6LMh6GFyEcaYh" Name="Value" Kind="InputPin" />
+              <Pin Id="ArntOsaBDEsN8JUASCLPKS" Name="Up Edge" Kind="OutputPin" />
+              <Pin Id="DGA0oQAIZ2IPnb6NReCmi9" Name="Down Edge" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="445,936,786,564" Id="ApQB2cReLnNLWcOwSctKxp">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="NbbXe9oQ5lHO6WoGn7P2EM" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="CRJSMemZEmuNAPlKslAMPz" Bounds="847,1494" Alignment="Bottom" />
+              <ControlPoint Id="MqwzKLMvtsCPnvJa9glKw8" Bounds="847,942" Alignment="Top" />
+              <Patch Id="DenhaSOI0x5LfgXFRF8Xv3" ManuallySortedPins="true">
+                <Node Bounds="457,959,88,19" Id="GWls4BU5XGeNYhXGkxKZ57">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="globalPlaySpace" />
+                  </p:NodeReference>
+                  <Pin Id="JqzfSidM1FIQD8CuUFWtay" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="GEGIbY1BQlQMlKmdoPbgaK" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LsZsi3F47NDL5yMJpaog3x" Name="Global Play Space" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="457,1019,95,19" Id="OxduqEx1vZUNGIdqiv4uoA">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="globalFrameState" />
+                  </p:NodeReference>
+                  <Pin Id="A8BFePkb0tCLLbtjfD39BO" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VK7fwC8jjT3PNkXIImOPQ9" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="HyQGh37IG7dLq5qL2KrPb5" Name="Global Frame State" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="590,1067,66,19" Id="K9hIg0wkLbvMpKDjyGKCKu">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Update" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HandTracking" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="QmYAxDwcDBCMf2UVt8vin7" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UtuRrh3Bih1McMgWWcnCMd" Name="Play Space" Kind="InputPin" />
+                  <Pin Id="TFna6gx0pG7Mn5iUHVk7gI" Name="Frame State" Kind="InputPin" />
+                  <Pin Id="AFVklOgJRPnMjwMeBN3w1n" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="591,1118,119,19" Id="A0uIf8C9HXgLCppHLuLptt">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
+                    <Choice Kind="OperationCallFlag" Name="leftHandJointLocations" />
+                  </p:NodeReference>
+                  <Pin Id="HO5JohFmkuPNDzsTCKN6Pa" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VP5UQCSInY4QO7Ydqg4UsK" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="DgFmAfEBsVsQAkf17wCaay" Name="Left Hand Joint Locations" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="693,1172,218,278" Id="TjjjxCJ04lBLRfKAvcvKZ1">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="RRhJT6BOBfiPcjKFA36RRL" Name="Break" Kind="OutputPin" />
+                  <Patch Id="CB5AeAzw9VNMLM4gnt9nVO" ManuallySortedPins="true">
+                    <Patch Id="RD1gZrGRISWNTgPuNr0Zt9" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="UrEQFZAxDjkPRbEdvouy5Y" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="OJOq3JxkMjKLkuwXw5edjA" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="710,1203,95,19" Id="HFlmHwxUWPlOcVea38s9Hs">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
+                        <Choice Kind="OperationCallFlag" Name="Pose" />
+                      </p:NodeReference>
+                      <Pin Id="IDRQvEuXsAtMBmUJvia3S7" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="G1F93lMCN0yQBGhxmqIZuz" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Aihci2hoW3GMQb8sOFCnxj" Name="Pose" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="797,1245,53,19" Id="P6lrE1upNXDNyfjuJ7MVGD">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Posef" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Posef" />
+                        <Choice Kind="OperationCallFlag" Name="Position" />
+                      </p:NodeReference>
+                      <Pin Id="SwHHv0ycnG7LY2bgif4V3P" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Uz8ZiKteqQiMwVAkLUzGWw" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="InBJO94WD6AQZdm2wdYjGi" Name="Position" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="849,1278,47,19" Id="C3HufOOjysQOMcSh6PS2np">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Vector3f" />
+                        <Choice Kind="OperationCallFlag" Name="X" />
+                      </p:NodeReference>
+                      <Pin Id="ERpcqFeel5XLA3VCEBvi3s" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="CbcBUL9PaSLPr2778c9Iz4" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Sh1ub2u9qwPOJgimPJSXHW" Name="X" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="850,1316,47,19" Id="UVYR86nLnuuNu2kjnSZVCd">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="Y" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="Cmr3nhTs2rQPdGehpRL5EN" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="LZZmTWNJtdJOTmCshbKyDf" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="QkUGA1ydNnRQbwRknqtMAn" Name="Y" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="852,1355,47,19" Id="O7pYnnraEeuODg2zogqBDb">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="Z" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="Pe5hryeykKDNe19dCYxXyh" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="EyNP0jL6AqaLHlbk2UXa24" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="E1zffr7UCBSMVI6UZAyUHG" Name="Z" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="848,1409,46,19" Id="Dgkp3BqFXNxOy2DPmnDD8k">
+                      <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="Vector3Type" Name="Vector3" />
+                        <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
+                      </p:NodeReference>
+                      <Pin Id="FElfSzW13hVLYnl066dpHW" Name="X" Kind="InputPin" />
+                      <Pin Id="Pd0MgkIVrqYL2CyzTqHf6m" Name="Y" Kind="InputPin" />
+                      <Pin Id="GOioqj635ilLgmk0sNTqKF" Name="Z" Kind="InputPin" />
+                      <Pin Id="RmeVfIcOaumOieSzvsy8d2" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="710,1313,95,19" Id="BFkuhO6gxSMMYyjKORTsd5">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
+                        <Choice Kind="OperationCallFlag" Name="Radius" />
+                      </p:NodeReference>
+                      <Pin Id="EfKVryeUWG9MN96DQVTUJj" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="ROsEwu4eBKJQZoZ16PNpO3" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="V2ECyAyWXtbNqRnSGLTBWW" Name="Radius" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="B8VOy7F3tHvMk0qZve3Jyf" Bounds="707,1178" Alignment="Top" />
+                  <ControlPoint Id="BCAMwPHpkWZPD4bJwsYRqe" Bounds="850,1444" Alignment="Bottom" />
+                  <ControlPoint Id="VkNu9cNbbM3MjbhgIqynsF" Bounds="794,1444" Alignment="Bottom" />
+                </Node>
+                <Patch Id="U97TfR9NOfLO9jkbu75lmv" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="GIEFB4U9sa5MIRg5qN2P8d" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="899,1106,126,19" Id="Sq3iKKsrHKfN916gQEqy1w">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
+                    <Choice Kind="OperationCallFlag" Name="rightHandJointLocations" />
+                  </p:NodeReference>
+                  <Pin Id="OUr0VoxUDOkL1jm1ipE3WH" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="C5RMLgrMlXMNO2kSKZtdXl" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="KuvVU9DcBtoLX5fz3s5p5W" Name="Right Hand Joint Locations" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1001,1160,218,278" Id="MGwnT92wj6sP22ckdCOMdS">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="SabZKipAPHKLziD8M00wXm" Name="Break" Kind="OutputPin" />
+                  <Patch Id="Mppttzl93XWPvsIUMRUKTw" ManuallySortedPins="true">
+                    <Patch Id="Saxwb1QL1TWQJiMGuxNNbm" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="Afld50nHJftPXOn3rN86y2" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="CYNig5FPSZyL9OwZ3nntqn" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="1018,1191,95,19" Id="UfqfXuxc2TkMij649X8eAl">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
+                        <Choice Kind="OperationCallFlag" Name="Pose" />
+                      </p:NodeReference>
+                      <Pin Id="MubnNbsl9qyNthHjwSQYKG" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="RAfXIIh8Vd9MeAopjZZqbp" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="GOTv0y9BBJIMNdjWketucz" Name="Pose" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1105,1233,53,19" Id="GktUjb0D4xCLDx557A5BXU">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Posef" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Posef" />
+                        <Choice Kind="OperationCallFlag" Name="Position" />
+                      </p:NodeReference>
+                      <Pin Id="RBQ0j3x1KP3Pxpo77duMCw" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="LTMGt9pE7JZLisVSbTsedA" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="BJ4yDYzh8SZLGjoluib2d4" Name="Position" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1157,1266,47,19" Id="EuqJMn6vwbuK93opv8vzK8">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Vector3f" />
+                        <Choice Kind="OperationCallFlag" Name="X" />
+                      </p:NodeReference>
+                      <Pin Id="PalvypSj3KSMYqwhUKB1TM" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="OzUMnQf72bOMWU7mPTWmRV" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Fgkz3isS9dfMQZPZesBa0j" Name="X" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1158,1304,47,19" Id="TVVYRtBKZa9NuTyyl6QKzI">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="Y" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="Ifdez5oyIjZL5IBCiU9OWy" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="HABn8fptG7WO8YRuRylmD9" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="DupxW82lbAnMFdAkrHDmsV" Name="Y" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1160,1343,47,19" Id="HHQcmwQJc4QNZhyICJs64s">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="Z" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="NaG1S1ybXumM6sod8Pioew" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="GVsmoIKxZwvO0psUc0MzQL" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="VJlsSVU3UnZN6NEjJt257y" Name="Z" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1156,1397,46,19" Id="E3fYxMGJk1EM7VG0E19IQt">
+                      <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="Vector3Type" Name="Vector3" />
+                        <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
+                      </p:NodeReference>
+                      <Pin Id="QxrPq61coezPzkFnhiS5Pz" Name="X" Kind="InputPin" />
+                      <Pin Id="H1YHbH0tkjBOOkG5qgTvAA" Name="Y" Kind="InputPin" />
+                      <Pin Id="FtohikNFGIZP3nD624XCyo" Name="Z" Kind="InputPin" />
+                      <Pin Id="MPSdv5Q8rJoN3SfXsXjQ6r" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="1041,1318,95,19" Id="QEpSfYa3IvWQZc5AH9pYKi">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
+                        <Choice Kind="OperationCallFlag" Name="Radius" />
+                      </p:NodeReference>
+                      <Pin Id="H4KvHktJ8x0N4x2VCrJClQ" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="HIopFAnS2wvMkvI0OMTe6G" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Peuahe6ROeuO7stJFf1h6x" Name="Radius" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="Uga0gUQIqaaLxebqW7MCxd" Bounds="1015,1166" Alignment="Top" />
+                  <ControlPoint Id="A7UWNpidaWzNELzIoeKkMp" Bounds="1158,1432" Alignment="Bottom" />
+                  <ControlPoint Id="QACGnYcimiBMrPcNGTv2Vr" Bounds="1084,1432" Alignment="Bottom" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="DkQwfuXRnX5Ln41ZXMZlje" Bounds="1160,1494" Alignment="Bottom" />
+              <ControlPoint Id="FosqmmXcIHnNv5Log6kcfb" Bounds="1160,942" Alignment="Top" />
+              <ControlPoint Id="BuRSHKZhZsxLYyRE1r4VE8" Bounds="793,1494" Alignment="Bottom" />
+              <ControlPoint Id="AWTKpStvBciNBE3x4HFagJ" Bounds="793,942" Alignment="Top" />
+              <ControlPoint Id="NrsuCGbCe3XO3Z4ublvUjU" Bounds="1080,1494" Alignment="Bottom" />
+              <ControlPoint Id="OrmnolgAybROJEsrrUpkiW" Bounds="1080,942" Alignment="Top" />
+            </Node>
+            <Node Bounds="368,876,65,19" Id="Fd10pgsD1naOp9a10pl95R">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="DHnkBAP9LYGQLeDqxbG3xt" Name="X" Kind="InputPin" />
+              <Pin Id="Te4FGy4gYwJOdBYVOvxLOH" Name="Result" Kind="OutputPin" />
+              <Pin Id="E6zKwsPB75kPKcq6cYhNA1" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="J5G1kC4hZySOHNNn207iuF" Bounds="1189,1559" />
+            <ControlPoint Id="HtRTvjE161KPno7Dy2vKFH" Bounds="720,1567" />
+            <ControlPoint Id="O8t5vtcI32wO4ZO5aWQ2Ap" Bounds="1075,1563" />
+            <Node Bounds="432,201,61,19" Id="CnWVV9Awj6UPd1Tkhxhf4c">
+              <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="OpenXRHmd" />
+                <Choice Kind="OperationCallFlag" Name="extensions" />
+              </p:NodeReference>
+              <Pin Id="LtQENfftuGwNyVbQDRqtBD" Name="Extensions" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="432,253,57,26" Id="TqNde6HjzWUNIsS7Weq2Rr">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Add" />
+                <CategoryReference Kind="ClassType" Name="MutableList" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="RXyVRbt8mODMtEth21FzNa" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BqooBmaTEXZMp8KuUKZoJY" Name="Item" Kind="InputPin" />
+              <Pin Id="Mk3HG7XSZm3Mykj3ACi17Z" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="VsI5NcveK9hMv8Y3exLzFm" Comment="Item" Bounds="486,237,120,15" ShowValueBox="true" isIOBox="true" Value="XR_EXT_hand_tracking">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="398,336,86,80" Id="U8Ufu9AHQoqPR38ewMvIvE">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="GwpfP2gpGEGOC3kHtogeUj" Name="Condition" Kind="InputPin" DefaultValue="True" />
+              <Patch Id="B9N9UnFeoCpOY3KhDn6aFv" ManuallySortedPins="true">
+                <Patch Id="DR6HGolu5a6MrKOCewiUag" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="DnzATg45e3GLoqiIyTGc5Z" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="412,360,60,19" Id="Lfofa6XzdqXO4SWb9rAraB">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality" LastSymbolSource="VL.Stride.Engine.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="VRService" />
+                  </p:NodeReference>
+                  <Pin Id="LZLPor61l8WMXk63v06Hok" Name="Device" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="JTqEH0nqqmKN0dtYgOxYEB" Bounds="434,342" Alignment="Top" />
+              <ControlPoint Id="IvlXA5fbPvuLS8JElipfNH" Bounds="434,410" Alignment="Bottom" />
+              <ControlPoint Id="OxhTDM0f0vOLD7Rgda9HXr" Bounds="412,410" Alignment="Bottom" />
+              <ControlPoint Id="ESBG84j6DkdM8DV0JTpjQS" Bounds="412,342" Alignment="Top" />
+            </Node>
+            <Pad Id="BwT0X9PQHnkLqrH8NQ47o1" Bounds="434,305" />
+          </Canvas>
+          <ProcessDefinition Id="FuGCi3bdF44P2ISaLGi6iG">
+            <Fragment Id="I0jKBJJbblTQFZvHs6PWqS" Patch="EN84s46RXTzQYagRPz0YHg" Enabled="true" />
+            <Fragment Id="QxGPAqNw9wqNcGkBqAV5zv" Patch="FCKWaRmsmV7P1601jZnvlN" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="R30OktVCXaCOvo3cPT1n2G" Name="Device">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="OpenXRHmd" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="SuqEcOGW3SfMNwztM2aqPU" Ids="OIjE6d1nvS5NgpY43cZ00r,JygbUi54FREObho0BdjAPE" />
+          <Link Id="BNVyuzkaYeOPfuYr3wipDS" Ids="OIjE6d1nvS5NgpY43cZ00r,JqzfSidM1FIQD8CuUFWtay" />
+          <Link Id="BTHOyavNT2ZPxSVeaMqIKR" Ids="RlOVByBkzY0OQKbCmCZdya,RcNgNooGRBvORhjYEOic7r" IsHidden="true" />
+          <Link Id="N9yPgVKMChePB0ulde5jPx" Ids="NfyhatvWBTPOt04xbdB2kL,OIjE6d1nvS5NgpY43cZ00r" />
+          <Link Id="LARiEJ8D3grMUxGlKWgktb" Ids="H2UlubPfYaGObVuYy4TBum,CJVc5KX0Cm4MldSHmHL59X" />
+          <Link Id="JpqsRlZxB0HP5FONHNLrA4" Ids="B6BaT1TeV4KM8ZqPXo84kN,BcvWOeRojhxN3Cr666bmcs" />
+          <Link Id="Nnv6ygBPMlQPvru368r5xq" Ids="IE1Dl9JzD6VPHVT4e6meRR,UfVCBfu7HX0M4rkjT8rdLJ" />
+          <Link Id="VzmAeidVTz8LhFRg4NduHc" Ids="SWNtHzGfknCOxwdBbZ93HF,J6DyuEQyzMpNLuU8CaJ0sF" />
+          <Link Id="HEbSw6ft8hVODBqweMjUCQ" Ids="Pq6AolYt5DqQTahJXJCeVq,CLLEo3cu2lIMPbID2raHPz" />
+          <Link Id="HiOUz11JYXvOvTV3jj2xBQ" Ids="BjUIlqKr22QPRFh1aHRznS,Ey6uihUQJ1nP7kCF6ccdis" />
+          <Link Id="KUQHVZmTMPOL0h1993Ykdx" Ids="P1GoWqjT5jLPUXGN11gPdM,JKjPHc9qG5dNKtLLZft8UE" />
+          <Link Id="TCR5vFbkAZDOzUUcqZ7jGe" Ids="OCPRR3ibfbXMGZt9eJkPYj,VoAFZUyWiEaOzSDZ1Rt0A3" />
+          <Link Id="GVJzkzShvWAP89lVjnTPcv" Ids="ONHusxkIGFdLhuwUy0UOiE,T7VPH0C3B6LMh6GFyEcaYh" />
+          <Link Id="Op30D9BYzENNzqWPhfZQck" Ids="ArntOsaBDEsN8JUASCLPKS,N5azhQqBJLeOD5Bz3meX23" />
+          <Link Id="VUkvGFz6WVaOZNgW7a8vE8" Ids="I2k7NILV7ndMyfQQER5pLG,FTig0ewPNBTM0IkXL62bQe" />
+          <Link Id="MGBiVo91sySMxDKOqSbT0J" Ids="FTig0ewPNBTM0IkXL62bQe,QmYAxDwcDBCMf2UVt8vin7" />
+          <Link Id="GK3Hv5Sdt2oNDz29r759nS" Ids="GEGIbY1BQlQMlKmdoPbgaK,A8BFePkb0tCLLbtjfD39BO" />
+          <Link Id="O9yzssbAygNPzSoj5QLIL0" Ids="LsZsi3F47NDL5yMJpaog3x,UtuRrh3Bih1McMgWWcnCMd" />
+          <Link Id="KIgmUMOgVCVOZKb82XPoy2" Ids="HyQGh37IG7dLq5qL2KrPb5,TFna6gx0pG7Mn5iUHVk7gI" />
+          <Link Id="GjyDc7iKwnfLfpyYwNMlOX" Ids="AFVklOgJRPnMjwMeBN3w1n,HO5JohFmkuPNDzsTCKN6Pa" />
+          <Link Id="LS56U1cDMdPMrGQVxDP2iy" Ids="DgFmAfEBsVsQAkf17wCaay,B8VOy7F3tHvMk0qZve3Jyf" />
+          <Link Id="LQcd3FrAIDeLq2xtjecV9s" Ids="B8VOy7F3tHvMk0qZve3Jyf,IDRQvEuXsAtMBmUJvia3S7" />
+          <Link Id="DmDeI0xDyxlPlC3dU0ZqF2" Ids="Aihci2hoW3GMQb8sOFCnxj,SwHHv0ycnG7LY2bgif4V3P" />
+          <Link Id="SXhjowvWcZHMCKaHHrMxFW" Ids="InBJO94WD6AQZdm2wdYjGi,ERpcqFeel5XLA3VCEBvi3s" />
+          <Link Id="SdmCTum90tWNa0P5CNILuM" Ids="CbcBUL9PaSLPr2778c9Iz4,Cmr3nhTs2rQPdGehpRL5EN" />
+          <Link Id="H3DtQ1vjtknLbX55xpiwWE" Ids="LZZmTWNJtdJOTmCshbKyDf,Pe5hryeykKDNe19dCYxXyh" />
+          <Link Id="RP9rAbd4yJdLMlR67DpxhA" Ids="Sh1ub2u9qwPOJgimPJSXHW,FElfSzW13hVLYnl066dpHW" />
+          <Link Id="KFvATJE7mGuPD0KF3cU6Hf" Ids="QkUGA1ydNnRQbwRknqtMAn,Pd0MgkIVrqYL2CyzTqHf6m" />
+          <Link Id="Ny6h2kHoL7kNo4fynoF4dN" Ids="E1zffr7UCBSMVI6UZAyUHG,GOioqj635ilLgmk0sNTqKF" />
+          <Link Id="MaimpQQq0vgODU4fkFlNCs" Ids="RmeVfIcOaumOieSzvsy8d2,BCAMwPHpkWZPD4bJwsYRqe" />
+          <Link Id="DthOIJO9CJ6L04tt1DKqGD" Ids="Te4FGy4gYwJOdBYVOvxLOH,NbbXe9oQ5lHO6WoGn7P2EM" />
+          <Link Id="UZOTOh6S93QPD8h5vcH6q3" Ids="FTig0ewPNBTM0IkXL62bQe,DHnkBAP9LYGQLeDqxbG3xt" />
+          <Link Id="C7GYL7O8FgUQBi78IKogsL" Ids="MqwzKLMvtsCPnvJa9glKw8,CRJSMemZEmuNAPlKslAMPz" IsFeedback="true" />
+          <Link Id="N1vrKazlrDWOoZ74qcNfQh" Ids="BCAMwPHpkWZPD4bJwsYRqe,CRJSMemZEmuNAPlKslAMPz" />
+          <Link Id="P8Q9327rNNdNDujcYLMHGC" Ids="CRJSMemZEmuNAPlKslAMPz,RlOVByBkzY0OQKbCmCZdya" />
+          <Link Id="CCBqP7AIvevNVO9tsRtX34" Ids="Uga0gUQIqaaLxebqW7MCxd,MubnNbsl9qyNthHjwSQYKG" />
+          <Link Id="PbDm7cFGQCkOM6RfFbLzeK" Ids="GOTv0y9BBJIMNdjWketucz,RBQ0j3x1KP3Pxpo77duMCw" />
+          <Link Id="NA519IsDQTFOauDSBMVYch" Ids="BJ4yDYzh8SZLGjoluib2d4,PalvypSj3KSMYqwhUKB1TM" />
+          <Link Id="NtqLWMQcdh4Pu0KXJarjNp" Ids="OzUMnQf72bOMWU7mPTWmRV,Ifdez5oyIjZL5IBCiU9OWy" />
+          <Link Id="GNVH2TdAjmYL7q8skoikjF" Ids="HABn8fptG7WO8YRuRylmD9,NaG1S1ybXumM6sod8Pioew" />
+          <Link Id="ME6pb01DSAGPvI0uuOtIfg" Ids="Fgkz3isS9dfMQZPZesBa0j,QxrPq61coezPzkFnhiS5Pz" />
+          <Link Id="BZTBSjSpsyHQMOPyKwKufK" Ids="DupxW82lbAnMFdAkrHDmsV,H1YHbH0tkjBOOkG5qgTvAA" />
+          <Link Id="FiyPvKFttn1O7j2rfgo1MU" Ids="VJlsSVU3UnZN6NEjJt257y,FtohikNFGIZP3nD624XCyo" />
+          <Link Id="RXAImyaR91eMxkfkuI6vtp" Ids="MPSdv5Q8rJoN3SfXsXjQ6r,A7UWNpidaWzNELzIoeKkMp" />
+          <Link Id="LaOWbnPSzViNAWVDu57OnC" Ids="VP5UQCSInY4QO7Ydqg4UsK,OUr0VoxUDOkL1jm1ipE3WH" />
+          <Link Id="Qgiwpk6OekrL8svR9lSD5Z" Ids="KuvVU9DcBtoLX5fz3s5p5W,Uga0gUQIqaaLxebqW7MCxd" />
+          <Link Id="G1B6LICsV7pNoj1IEhilWJ" Ids="FosqmmXcIHnNv5Log6kcfb,DkQwfuXRnX5Ln41ZXMZlje" IsFeedback="true" />
+          <Link Id="Jtd6YL6rbUjOKWwTVypMh7" Ids="A7UWNpidaWzNELzIoeKkMp,DkQwfuXRnX5Ln41ZXMZlje" />
+          <Link Id="IxRuOScpkcwPXX3hP9qMa5" Ids="DkQwfuXRnX5Ln41ZXMZlje,J5G1kC4hZySOHNNn207iuF" />
+          <Link Id="VNAU1eecTnGOxNrrMfzFLk" Ids="J5G1kC4hZySOHNNn207iuF,KIBueJZWYjmPOERWVadmzf" IsHidden="true" />
+          <Link Id="CqItfOHrDbWNmDrNAMWe7n" Ids="G1F93lMCN0yQBGhxmqIZuz,EfKVryeUWG9MN96DQVTUJj" />
+          <Link Id="HXyuXIXlvjHNkrkFrEgTcJ" Ids="V2ECyAyWXtbNqRnSGLTBWW,VkNu9cNbbM3MjbhgIqynsF" />
+          <Link Id="V6mH7p8mpMTLAD6pomvXMV" Ids="AWTKpStvBciNBE3x4HFagJ,BuRSHKZhZsxLYyRE1r4VE8" IsFeedback="true" />
+          <Link Id="CxeAfEoWEt6NzRYYXr8lBu" Ids="VkNu9cNbbM3MjbhgIqynsF,BuRSHKZhZsxLYyRE1r4VE8" />
+          <Link Id="JDwdjG1FDzzNBYtPc2Ulmp" Ids="BuRSHKZhZsxLYyRE1r4VE8,HtRTvjE161KPno7Dy2vKFH" />
+          <Link Id="NA1ZRpHDFh2OWD5Lje0u43" Ids="HtRTvjE161KPno7Dy2vKFH,U70SNjHy64PPYjVBFmmCSl" IsHidden="true" />
+          <Link Id="LNcjsVEGDJkPVswMMsEUO9" Ids="RAfXIIh8Vd9MeAopjZZqbp,H4KvHktJ8x0N4x2VCrJClQ" />
+          <Link Id="IdJLLRHdjIiPbgVf0q8GXG" Ids="Peuahe6ROeuO7stJFf1h6x,QACGnYcimiBMrPcNGTv2Vr" />
+          <Link Id="UMi5hOknuzmNCiM3C0WZe2" Ids="OrmnolgAybROJEsrrUpkiW,NrsuCGbCe3XO3Z4ublvUjU" IsFeedback="true" />
+          <Link Id="KtmP4TsDRJNMe7dwapRN5m" Ids="QACGnYcimiBMrPcNGTv2Vr,NrsuCGbCe3XO3Z4ublvUjU" />
+          <Link Id="OdML33VLmy3PisbsUsqOKE" Ids="NrsuCGbCe3XO3Z4ublvUjU,O8t5vtcI32wO4ZO5aWQ2Ap" />
+          <Link Id="MVL8mc0iuBcOrxAOzoZwoN" Ids="O8t5vtcI32wO4ZO5aWQ2Ap,S5L1zvfl2iLPIT7n8KMgrc" IsHidden="true" />
+          <Patch Id="EN84s46RXTzQYagRPz0YHg" Name="Create" ParticipatingElements="CnWVV9Awj6UPd1Tkhxhf4c" />
+          <Patch Id="FCKWaRmsmV7P1601jZnvlN" Name="Update">
+            <Pin Id="U70SNjHy64PPYjVBFmmCSl" Name="Left Hand Radii" Kind="OutputPin" Bounds="777,1674" />
+            <Pin Id="RcNgNooGRBvORhjYEOic7r" Name="Left Hand Joints" Kind="OutputPin" Bounds="801,1466" />
+            <Pin Id="S5L1zvfl2iLPIT7n8KMgrc" Name="Right Hand Radii" Kind="OutputPin" Bounds="1079,1666" />
+            <Pin Id="KIBueJZWYjmPOERWVadmzf" Name="Right Hand Joints" Kind="OutputPin" Bounds="1163,1670" />
+          </Patch>
+          <Patch Id="MNJRFpzcKExLTX1ntl5V1x" Name="Dispose" />
+          <Link Id="N6sUyG1FwGmOWTLrPuedsO" Ids="VsI5NcveK9hMv8Y3exLzFm,BqooBmaTEXZMp8KuUKZoJY" />
+          <Link Id="Ucub2l6XcbCP9YXR1IV15c" Ids="JTqEH0nqqmKN0dtYgOxYEB,IvlXA5fbPvuLS8JElipfNH" IsFeedback="true" />
+          <Link Id="AhCgIj2oCrbN40isQI2QpI" Ids="Mk3HG7XSZm3Mykj3ACi17Z,BwT0X9PQHnkLqrH8NQ47o1" />
+          <Link Id="SjOf7x9uJ0QOpQ5fu6wOdr" Ids="ESBG84j6DkdM8DV0JTpjQS,OxhTDM0f0vOLD7Rgda9HXr" IsFeedback="true" />
+          <Link Id="SCMueVE6yhwOTNWaFeZC7Z" Ids="LZLPor61l8WMXk63v06Hok,OxhTDM0f0vOLD7Rgda9HXr" />
+          <Link Id="UyOAwSjh9ByNEjo4seJyz9" Ids="OxhTDM0f0vOLD7Rgda9HXr,CK4QYZJuSEHM885RMXv2x7" />
+          <Link Id="H01i1VDE84UMEZJtfk8daP" Ids="BwT0X9PQHnkLqrH8NQ47o1,JTqEH0nqqmKN0dtYgOxYEB" />
+          <Link Id="CGNNMfMgTz9M7NCkUSVf32" Ids="LtQENfftuGwNyVbQDRqtBD,RXyVRbt8mODMtEth21FzNa" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="IhUu7LzZk1ZLxEDgBcivkk">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RDfj639WpihQcRtxPjmO5p">
+        <Canvas Id="O2QhEgYJUZxLFi1yvLlbGF" CanvasType="Group" />
+        <Patch Id="JG5EdHffSGsOrxWX71KSTO" Name="Create" />
+        <Patch Id="AoPFbpxPUVsNQqurqNxxIc" Name="Update" />
+        <ProcessDefinition Id="NJ22cDcaTOGLdUBdIHtnrf">
+          <Fragment Id="CHWvV0x4GbSMpNbiyllUOU" Patch="JG5EdHffSGsOrxWX71KSTO" Enabled="true" />
+          <Fragment Id="JDlZtBoSd64OEuAVFjvKmR" Patch="AoPFbpxPUVsNQqurqNxxIc" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="LkZdgTjlvacNwOjGFWaz3f" Location="./lib/Debug/netstandard2.1/OpenXRExtensions.dll" />
+  <NugetDependency Id="Up4HKBF1Ir5NQKYDYt83Kt" Location="VL.Stride" Version="0.0.0" />
+  <NugetDependency Id="JLYjtEFCPjQQDvVCqcWKzA" Location="Silk.NET.OpenXR" Version="2.6.0" />
+  <NugetDependency Id="F9y7PgVz53SNujBNcZd5Iv" Location="Stride.VirtualReality" Version="4.1.0.1765-OpenXR" />
+</Document>
