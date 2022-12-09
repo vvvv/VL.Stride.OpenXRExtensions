@@ -520,8 +520,8 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="LkZdgTjlvacNwOjGFWaz3f" Location="./lib/Debug/netstandard2.1/OpenXRExtensions.dll" />
+  <PlatformDependency Id="LkZdgTjlvacNwOjGFWaz3f" Location="OpenXRExtensions.dll" />
   <NugetDependency Id="Up4HKBF1Ir5NQKYDYt83Kt" Location="VL.Stride" Version="0.0.0" />
-  <NugetDependency Id="JLYjtEFCPjQQDvVCqcWKzA" Location="Silk.NET.OpenXR" Version="2.6.0" />
+  <NugetDependency Id="JLYjtEFCPjQQDvVCqcWKzA" Location="Silk.NET.OpenXR" Version="2.10.1" />
   <NugetDependency Id="F9y7PgVz53SNujBNcZd5Iv" Location="Stride.VirtualReality" Version="4.1.0.1765-OpenXR" />
 </Document>
