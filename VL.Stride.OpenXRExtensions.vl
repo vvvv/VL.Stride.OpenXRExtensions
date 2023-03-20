@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="D34QbqmNrM1MPS0v5V2oTx" LanguageVersion="2022.5.0-0330-ed568d1299" Version="0.128">
+<Document xmlns:p="property" Id="D34QbqmNrM1MPS0v5V2oTx" LanguageVersion="2022.5.0-0716-gdb6bf12015" Version="0.128">
   <NugetDependency Id="LL3YHijzGU8LYXB9XxnAgx" Location="VL.CoreLib" Version="2022.5.0-0330-ed568d1299" />
   <Patch Id="VzF5hWfjsDNPogiWmBMnrp">
     <Canvas Id="H1hv5waThxkO8vg5JgiSqt" DefaultCategory="Stride.VirtualReality" CanvasType="FullCategory">
@@ -9,7 +9,7 @@
 
 -->
       <Node Name="HandTrackingEXT" Bounds="401,355" Id="CRaowQ3WfUzQRjtQkpgrK1">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="NJ4jMDs0lB6MFbM47Sqf3f">
@@ -17,7 +17,7 @@
             <Pad Id="OIjE6d1nvS5NgpY43cZ00r" SlotId="R30OktVCXaCOvo3cPT1n2G" Bounds="430,510" />
             <ControlPoint Id="RlOVByBkzY0OQKbCmCZdya" Bounds="847,1568" />
             <Node Bounds="429,453,48,19" Id="Den1ygnRNJBLm9rsWjYwSo">
-              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="CastAs" />
               </p:NodeReference>
@@ -27,7 +27,7 @@
               <Pin Id="ONHusxkIGFdLhuwUy0UOiE" Name="Success" Kind="OutputPin" />
             </Node>
             <Node Bounds="497,533,166,300" Id="Ui1Ee5RWe6KOdyimiKgfmP">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
@@ -35,8 +35,8 @@
               <Pin Id="Sa4bj75znwwLUfuDCNWW3P" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
               <Pin Id="Ckxk7FrYxzUMBOAxmOfkUn" Name="Has Changed" Kind="OutputPin" />
               <Patch Id="EaZK1YQp0OXM8RAjpCYqya" ManuallySortedPins="true">
-                <Node Bounds="566,742,66,19" Id="GyWVZItxvziMV0pekomoDP">
-                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                <Node Bounds="566,742,66,26" Id="GyWVZItxvziMV0pekomoDP">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastDependency="OpenXRExtensions.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -44,7 +44,7 @@
                   <Pin Id="P1GoWqjT5jLPUXGN11gPdM" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="509,556,78,19" Id="N2vtbKIWSI5Osev2bivIQO">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="OpenXRHmd" />
                     <Choice Kind="OperationCallFlag" Name="globalSession" />
@@ -54,7 +54,7 @@
                   <Pin Id="IE1Dl9JzD6VPHVT4e6meRR" Name="Global Session" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="509,599,62,19" Id="BojraGufU9FQdXawnJhSIM">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="system_id" />
                   </p:NodeReference>
@@ -63,7 +63,7 @@
                   <Pin Id="SWNtHzGfknCOxwdBbZ93HF" Name="System_id" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="509,640,62,19" Id="Q3mpYG7UPqUNOUphSTDOGB">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Xr" />
                   </p:NodeReference>
@@ -71,8 +71,8 @@
                   <Pin Id="Pq6AolYt5DqQTahJXJCeVq" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="B6BaT1TeV4KM8ZqPXo84kN" Name="Xr" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="566,786,85,19" Id="Gv0yb5p311oP4l6Y2U4aid">
-                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                <Node Bounds="566,786,85,26" Id="Gv0yb5p311oP4l6Y2U4aid">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastDependency="OpenXRExtensions.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
                     <Choice Kind="OperationCallFlag" Name="Initialize" />
@@ -85,7 +85,7 @@
                   <Pin Id="I2k7NILV7ndMyfQQER5pLG" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="509,681,62,19" Id="En22tuwe8b8MhRFSsbk0Jr">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Instance" />
                     <CategoryReference Kind="AssemblyCategory" Name="OpenXRHmd" NeedsToBeDirectParent="true" />
@@ -100,7 +100,7 @@
               <ControlPoint Id="FTig0ewPNBTM0IkXL62bQe" Bounds="568,827" Alignment="Bottom" />
             </Node>
             <Node Bounds="495,493,56,19" Id="E31wuatZii2N5rhO5wVI3X">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="TogEdge" />
               </p:NodeReference>
@@ -109,16 +109,22 @@
               <Pin Id="DGA0oQAIZ2IPnb6NReCmi9" Name="Down Edge" Kind="OutputPin" />
             </Node>
             <Node Bounds="445,936,786,564" Id="ApQB2cReLnNLWcOwSctKxp">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="NbbXe9oQ5lHO6WoGn7P2EM" Name="Condition" Kind="InputPin" />
               <ControlPoint Id="CRJSMemZEmuNAPlKslAMPz" Bounds="847,1494" Alignment="Bottom" />
               <ControlPoint Id="MqwzKLMvtsCPnvJa9glKw8" Bounds="847,942" Alignment="Top" />
+              <ControlPoint Id="DkQwfuXRnX5Ln41ZXMZlje" Bounds="1160,1494" Alignment="Bottom" />
+              <ControlPoint Id="FosqmmXcIHnNv5Log6kcfb" Bounds="1160,942" Alignment="Top" />
+              <ControlPoint Id="BuRSHKZhZsxLYyRE1r4VE8" Bounds="793,1494" Alignment="Bottom" />
+              <ControlPoint Id="AWTKpStvBciNBE3x4HFagJ" Bounds="793,942" Alignment="Top" />
+              <ControlPoint Id="NrsuCGbCe3XO3Z4ublvUjU" Bounds="1080,1494" Alignment="Bottom" />
+              <ControlPoint Id="OrmnolgAybROJEsrrUpkiW" Bounds="1080,942" Alignment="Top" />
               <Patch Id="DenhaSOI0x5LfgXFRF8Xv3" ManuallySortedPins="true">
                 <Node Bounds="457,959,88,19" Id="GWls4BU5XGeNYhXGkxKZ57">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="globalPlaySpace" />
                   </p:NodeReference>
@@ -127,7 +133,7 @@
                   <Pin Id="LsZsi3F47NDL5yMJpaog3x" Name="Global Play Space" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="457,1019,95,19" Id="OxduqEx1vZUNGIdqiv4uoA">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="globalFrameState" />
                   </p:NodeReference>
@@ -135,8 +141,8 @@
                   <Pin Id="VK7fwC8jjT3PNkXIImOPQ9" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="HyQGh37IG7dLq5qL2KrPb5" Name="Global Frame State" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="590,1067,66,19" Id="K9hIg0wkLbvMpKDjyGKCKu">
-                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                <Node Bounds="590,1067,66,26" Id="K9hIg0wkLbvMpKDjyGKCKu">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastDependency="OpenXRExtensions.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Update" />
                     <CategoryReference Kind="AssemblyCategory" Name="HandTracking" NeedsToBeDirectParent="true" />
@@ -146,8 +152,8 @@
                   <Pin Id="TFna6gx0pG7Mn5iUHVk7gI" Name="Frame State" Kind="InputPin" />
                   <Pin Id="AFVklOgJRPnMjwMeBN3w1n" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="591,1118,119,19" Id="A0uIf8C9HXgLCppHLuLptt">
-                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                <Node Bounds="591,1118,119,26" Id="A0uIf8C9HXgLCppHLuLptt">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastDependency="OpenXRExtensions.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
                     <Choice Kind="OperationCallFlag" Name="leftHandJointLocations" />
@@ -157,18 +163,21 @@
                   <Pin Id="DgFmAfEBsVsQAkf17wCaay" Name="Left Hand Joint Locations" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="693,1172,218,278" Id="TjjjxCJ04lBLRfKAvcvKZ1">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="RRhJT6BOBfiPcjKFA36RRL" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="B8VOy7F3tHvMk0qZve3Jyf" Bounds="707,1178" Alignment="Top" />
+                  <ControlPoint Id="BCAMwPHpkWZPD4bJwsYRqe" Bounds="850,1444" Alignment="Bottom" />
+                  <ControlPoint Id="VkNu9cNbbM3MjbhgIqynsF" Bounds="794,1444" Alignment="Bottom" />
                   <Patch Id="CB5AeAzw9VNMLM4gnt9nVO" ManuallySortedPins="true">
                     <Patch Id="RD1gZrGRISWNTgPuNr0Zt9" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="UrEQFZAxDjkPRbEdvouy5Y" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="OJOq3JxkMjKLkuwXw5edjA" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="710,1203,95,19" Id="HFlmHwxUWPlOcVea38s9Hs">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
                         <Choice Kind="OperationCallFlag" Name="Pose" />
@@ -178,7 +187,7 @@
                       <Pin Id="Aihci2hoW3GMQb8sOFCnxj" Name="Pose" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="797,1245,53,19" Id="P6lrE1upNXDNyfjuJ7MVGD">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Posef" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Posef" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Posef" />
                         <Choice Kind="OperationCallFlag" Name="Position" />
@@ -188,7 +197,7 @@
                       <Pin Id="InBJO94WD6AQZdm2wdYjGi" Name="Position" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="849,1278,47,19" Id="C3HufOOjysQOMcSh6PS2np">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vector3f" />
                         <Choice Kind="OperationCallFlag" Name="X" />
@@ -198,7 +207,7 @@
                       <Pin Id="Sh1ub2u9qwPOJgimPJSXHW" Name="X" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="850,1316,47,19" Id="UVYR86nLnuuNu2kjnSZVCd">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Y" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
@@ -208,7 +217,7 @@
                       <Pin Id="QkUGA1ydNnRQbwRknqtMAn" Name="Y" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="852,1355,47,19" Id="O7pYnnraEeuODg2zogqBDb">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Z" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
@@ -218,7 +227,7 @@
                       <Pin Id="E1zffr7UCBSMVI6UZAyUHG" Name="Z" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="848,1409,46,19" Id="Dgkp3BqFXNxOy2DPmnDD8k">
-                      <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                      <p:NodeReference LastCategoryFullName="3D.Vector3" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Vector3Type" Name="Vector3" />
                         <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -229,7 +238,7 @@
                       <Pin Id="RmeVfIcOaumOieSzvsy8d2" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="710,1313,95,19" Id="BFkuhO6gxSMMYyjKORTsd5">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
                         <Choice Kind="OperationCallFlag" Name="Radius" />
@@ -239,14 +248,11 @@
                       <Pin Id="V2ECyAyWXtbNqRnSGLTBWW" Name="Radius" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="B8VOy7F3tHvMk0qZve3Jyf" Bounds="707,1178" Alignment="Top" />
-                  <ControlPoint Id="BCAMwPHpkWZPD4bJwsYRqe" Bounds="850,1444" Alignment="Bottom" />
-                  <ControlPoint Id="VkNu9cNbbM3MjbhgIqynsF" Bounds="794,1444" Alignment="Bottom" />
                 </Node>
                 <Patch Id="U97TfR9NOfLO9jkbu75lmv" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="GIEFB4U9sa5MIRg5qN2P8d" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="899,1106,126,19" Id="Sq3iKKsrHKfN916gQEqy1w">
-                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastSymbolSource="OpenXRExtensions.dll">
+                <Node Bounds="899,1106,126,26" Id="Sq3iKKsrHKfN916gQEqy1w">
+                  <p:NodeReference LastCategoryFullName="OpenXRExtensions.HandTracking" LastDependency="OpenXRExtensions.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="HandTracking" />
                     <Choice Kind="OperationCallFlag" Name="rightHandJointLocations" />
@@ -256,18 +262,21 @@
                   <Pin Id="KuvVU9DcBtoLX5fz3s5p5W" Name="Right Hand Joint Locations" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1001,1160,218,278" Id="MGwnT92wj6sP22ckdCOMdS">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="SabZKipAPHKLziD8M00wXm" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="Uga0gUQIqaaLxebqW7MCxd" Bounds="1015,1166" Alignment="Top" />
+                  <ControlPoint Id="A7UWNpidaWzNELzIoeKkMp" Bounds="1158,1432" Alignment="Bottom" />
+                  <ControlPoint Id="QACGnYcimiBMrPcNGTv2Vr" Bounds="1084,1432" Alignment="Bottom" />
                   <Patch Id="Mppttzl93XWPvsIUMRUKTw" ManuallySortedPins="true">
                     <Patch Id="Saxwb1QL1TWQJiMGuxNNbm" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Afld50nHJftPXOn3rN86y2" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="CYNig5FPSZyL9OwZ3nntqn" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="1018,1191,95,19" Id="UfqfXuxc2TkMij649X8eAl">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
                         <Choice Kind="OperationCallFlag" Name="Pose" />
@@ -277,7 +286,7 @@
                       <Pin Id="GOTv0y9BBJIMNdjWketucz" Name="Pose" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1105,1233,53,19" Id="GktUjb0D4xCLDx557A5BXU">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Posef" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Posef" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Posef" />
                         <Choice Kind="OperationCallFlag" Name="Position" />
@@ -287,7 +296,7 @@
                       <Pin Id="BJ4yDYzh8SZLGjoluib2d4" Name="Position" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1157,1266,47,19" Id="EuqJMn6vwbuK93opv8vzK8">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vector3f" />
                         <Choice Kind="OperationCallFlag" Name="X" />
@@ -297,7 +306,7 @@
                       <Pin Id="Fgkz3isS9dfMQZPZesBa0j" Name="X" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1158,1304,47,19" Id="TVVYRtBKZa9NuTyyl6QKzI">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Y" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
@@ -307,7 +316,7 @@
                       <Pin Id="DupxW82lbAnMFdAkrHDmsV" Name="Y" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1160,1343,47,19" Id="HHQcmwQJc4QNZhyICJs64s">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.Vector3f" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Z" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vector3f" NeedsToBeDirectParent="true" />
@@ -317,7 +326,7 @@
                       <Pin Id="VJlsSVU3UnZN6NEjJt257y" Name="Z" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1156,1397,46,19" Id="E3fYxMGJk1EM7VG0E19IQt">
-                      <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                      <p:NodeReference LastCategoryFullName="3D.Vector3" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Vector3Type" Name="Vector3" />
                         <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -328,7 +337,7 @@
                       <Pin Id="MPSdv5Q8rJoN3SfXsXjQ6r" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1041,1318,95,19" Id="QEpSfYa3IvWQZc5AH9pYKi">
-                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastSymbolSource="Silk.NET.OpenXR.dll">
+                      <p:NodeReference LastCategoryFullName="Silk.NET.OpenXR.HandJointLocationEXT" LastDependency="Silk.NET.OpenXR.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="HandJointLocationEXT" />
                         <Choice Kind="OperationCallFlag" Name="Radius" />
@@ -338,20 +347,11 @@
                       <Pin Id="Peuahe6ROeuO7stJFf1h6x" Name="Radius" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="Uga0gUQIqaaLxebqW7MCxd" Bounds="1015,1166" Alignment="Top" />
-                  <ControlPoint Id="A7UWNpidaWzNELzIoeKkMp" Bounds="1158,1432" Alignment="Bottom" />
-                  <ControlPoint Id="QACGnYcimiBMrPcNGTv2Vr" Bounds="1084,1432" Alignment="Bottom" />
                 </Node>
               </Patch>
-              <ControlPoint Id="DkQwfuXRnX5Ln41ZXMZlje" Bounds="1160,1494" Alignment="Bottom" />
-              <ControlPoint Id="FosqmmXcIHnNv5Log6kcfb" Bounds="1160,942" Alignment="Top" />
-              <ControlPoint Id="BuRSHKZhZsxLYyRE1r4VE8" Bounds="793,1494" Alignment="Bottom" />
-              <ControlPoint Id="AWTKpStvBciNBE3x4HFagJ" Bounds="793,942" Alignment="Top" />
-              <ControlPoint Id="NrsuCGbCe3XO3Z4ublvUjU" Bounds="1080,1494" Alignment="Bottom" />
-              <ControlPoint Id="OrmnolgAybROJEsrrUpkiW" Bounds="1080,942" Alignment="Top" />
             </Node>
             <Node Bounds="368,876,65,19" Id="Fd10pgsD1naOp9a10pl95R">
-              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="IsAssigned" />
               </p:NodeReference>
@@ -363,7 +363,7 @@
             <ControlPoint Id="HtRTvjE161KPno7Dy2vKFH" Bounds="720,1567" />
             <ControlPoint Id="O8t5vtcI32wO4ZO5aWQ2Ap" Bounds="1075,1563" />
             <Node Bounds="432,201,61,19" Id="CnWVV9Awj6UPd1Tkhxhf4c">
-              <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastSymbolSource="Stride.VirtualReality.dll">
+              <p:NodeReference LastCategoryFullName="Stride.VirtualReality.OpenXRHmd" LastDependency="Stride.VirtualReality.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="OpenXRHmd" />
                 <Choice Kind="OperationCallFlag" Name="extensions" />
@@ -371,7 +371,7 @@
               <Pin Id="LtQENfftuGwNyVbQDRqtBD" Name="Extensions" Kind="OutputPin" />
             </Node>
             <Node Bounds="432,253,57,26" Id="TqNde6HjzWUNIsS7Weq2Rr">
-              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Add" />
                 <CategoryReference Kind="ClassType" Name="MutableList" NeedsToBeDirectParent="true" />
@@ -381,12 +381,12 @@
               <Pin Id="Mk3HG7XSZm3Mykj3ACi17Z" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="VsI5NcveK9hMv8Y3exLzFm" Comment="Item" Bounds="486,237,120,15" ShowValueBox="true" isIOBox="true" Value="XR_EXT_hand_tracking">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="398,336,86,80" Id="U8Ufu9AHQoqPR38ewMvIvE">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
@@ -395,7 +395,7 @@
                 <Patch Id="DR6HGolu5a6MrKOCewiUag" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="DnzATg45e3GLoqiIyTGc5Z" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="412,360,60,19" Id="Lfofa6XzdqXO4SWb9rAraB">
-                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality" LastSymbolSource="VL.Stride.Engine.vl">
+                  <p:NodeReference LastCategoryFullName="Stride.VirtualReality" LastDependency="VL.Stride.Engine.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="VRService" />
                   </p:NodeReference>
@@ -522,6 +522,6 @@
   </Patch>
   <PlatformDependency Id="LkZdgTjlvacNwOjGFWaz3f" Location="OpenXRExtensions.dll" />
   <NugetDependency Id="Up4HKBF1Ir5NQKYDYt83Kt" Location="VL.Stride" Version="0.0.0" />
-  <NugetDependency Id="JLYjtEFCPjQQDvVCqcWKzA" Location="Silk.NET.OpenXR" Version="2.10.1" />
-  <NugetDependency Id="F9y7PgVz53SNujBNcZd5Iv" Location="Stride.VirtualReality" Version="4.1.0.1765-OpenXR" />
+  <PlatformDependency Id="IR4ZLRmCf7VLGjmuCwJRmc" Location="Silk.NET.OpenXR.dll" />
+  <PlatformDependency Id="EfPmHuJd0YGQR5drI5L41K" Location="Stride.VirtualReality.dll" />
 </Document>
