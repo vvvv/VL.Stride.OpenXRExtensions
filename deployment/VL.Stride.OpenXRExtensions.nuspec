@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Stride.OpenXRExtensions</id>
-    <version>0.0.6-alpha</version>
+    <version>0.0.7-alpha</version>
     <title>VL.Stride.OpenXRExtensions</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -12,6 +12,9 @@
     <description>OpenXR Extensions for VL</description>
     <tags>VL, stride, openxr, handtracking</tags>
     <license type="expression">LGPL-3.0-only</license>
+    <dependencies>
+      <dependency id="Silk.NET.OpenXR" version="2.15.0" />
+    </dependencies>
     <icon>icon\nugeticon.png</icon>
   </metadata>
   <files>
