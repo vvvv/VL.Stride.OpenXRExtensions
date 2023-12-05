@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VpkcW5f59kWM5UaK14JDid" LanguageVersion="2022.5.0-0722-g595d2c4168" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="VOtESkF8ruKOfx13eVwL9Y" LanguageVersion="2023.5.2" Version="0.128">
   <NugetDependency Id="EK2IIfeZLP7M7Y7FuMidpy" Location="VL.CoreLib" Version="2021.4.9" />
   <Patch Id="OJlEj9qqLsGQMBVoXBBHQD">
     <Canvas Id="JJIykWSGbjqMd3yAxb7JUf" DefaultCategory="Main" CanvasType="FullCategory">
@@ -1191,7 +1191,7 @@
             <Pin Id="QpTE7NNVBMNLQr5rx2VQfR" Name="VRApi" Kind="OutputPin" />
             <Pin Id="JSvjBA0x1g7LhwA6zjjBkY" Name="VR Device System" Kind="OutputPin" />
           </Node>
-          <Node Bounds="480,810,125,19" Id="JDiNqOg6bJ8QAiQhRIFos5">
+          <Node Bounds="480,810,165,19" Id="JDiNqOg6bJ8QAiQhRIFos5">
             <p:NodeReference LastCategoryFullName="Stride.VirtualReality" LastDependency="VL.Stride.Engine.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DefaultVRSettings" />
@@ -1200,9 +1200,11 @@
             <Pin Id="EqGJFFubGxmLGy8qia8ygb" Name="Copy Mirror" Kind="InputPin" />
             <Pin Id="ASJMD64AG2jNFXVvA438NJ" Name="Ignore Device Rotation" Kind="InputPin" />
             <Pin Id="AipJY2sT67uNUcFgVzy0bc" Name="Ignore Device Position" Kind="InputPin" />
+            <Pin Id="HRpB3bEp44HOA4M7WPfUCH" Name="Api" Kind="InputPin" />
             <Pin Id="MFwGisn5z07MlScoD2HdTU" Name="Resolution Scale" Kind="InputPin" />
-            <Pin Id="QsRFYoRlB9dPxH46gVREFf" Name="Enabled" Kind="InputPin" />
+            <Pin Id="G8e96J8nEgOPF3BRqMqn2N" Name="Request Passthrough" Kind="InputPin" />
             <Pin Id="K64gqRDCxIWNfRf32REmu6" Name="Overlays" Kind="InputPin" />
+            <Pin Id="QsRFYoRlB9dPxH46gVREFf" Name="Enabled" Kind="InputPin" />
             <Pin Id="AmxkvqwgtlgNgl49tyo1qK" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="RysqPEUewMMN6AHW4CqYbf" Comment="Enabled" Bounds="709,752,35,35" ShowValueBox="true" isIOBox="true" Value="True">
@@ -1337,6 +1339,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HandTrackingEXT" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="QwcrB5NbA0eLl8YCQaZYJy" Name="Left Hand Radii" Kind="OutputPin" />
             <Pin Id="PuCUhr0Eas0P7A1QPBZBCi" Name="Left Hand Joints" Kind="OutputPin" />
             <Pin Id="TUZj9ye0VJLMqbzowaTvws" Name="Right Hand Radii" Kind="OutputPin" />
