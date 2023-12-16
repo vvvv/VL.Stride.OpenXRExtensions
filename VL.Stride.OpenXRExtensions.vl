@@ -600,9 +600,6 @@
   </Patch>
   <PlatformDependency Id="LkZdgTjlvacNwOjGFWaz3f" Location="OpenXRExtensions.dll" />
   <NugetDependency Id="Up4HKBF1Ir5NQKYDYt83Kt" Location="VL.Stride" Version="0.0.0" />
-  <PlatformDependency Id="IR4ZLRmCf7VLGjmuCwJRmc" Location="Silk.NET.OpenXR.dll" />
-  <PlatformDependency Id="EfPmHuJd0YGQR5drI5L41K" Location="Stride.VirtualReality.dll" />
-  <PlatformDependency Id="MpS7c5WdyXWMgyqxK3bEY1" Location="OpenXRExtensions.dll" />
-  <PlatformDependency Id="NByZh8uSFfdO4Vopd8m7z2" Location="Silk.NET.OpenXR.dll" />
+    <PlatformDependency Id="NByZh8uSFfdO4Vopd8m7z2" Location="Silk.NET.OpenXR.dll" />
   <PlatformDependency Id="FV7GOFpYY6uON27Jn3sPG2" Location="Stride.VirtualReality.dll" />
 </Document>
